@@ -1,0 +1,16 @@
+$list = (Get-ContentFilterConfig).BypassedSenderDomains
+$list.add("actievandedag.nl")
+$list.add("hema.nl")
+$list.add("schoudercom.nl")
+$list.add("tumblendry.com")
+$list.add("myorder.nl")
+$list.add("facebook.com")
+$list.add("instagram.com")
+$list.add("cz.nl")
+$list.add("bol.com")
+$list.add("dennisdealmarketing.nl")
+$list.add("wehkamp.nl")
+$list.add("evernote.com")
+$list.add("staatsloterij.nl")
+$list.add("dansstudiosonja.nl")
+Set-ContentFilterConfig -BypassedSenderDomains $list
