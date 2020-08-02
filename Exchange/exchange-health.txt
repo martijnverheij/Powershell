@@ -1,0 +1,2 @@
+Get-ServerHealth -Server YOUREXCHANGESERVER | where {$_.AlertValue -ne "Healthy" -and $_.AlertValue -ne "Disabled"} | FL
+
